@@ -16,7 +16,7 @@ from joblib import dump
 
 print(" Đọc dữ liệu")
 
-DATA_PATH = "./data/IMDB_Dataset.csv"
+DATA_PATH = "./data/train_df.csv"
 data = pd.read_csv(DATA_PATH)
 
 def clean_text(text):
