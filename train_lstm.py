@@ -29,7 +29,7 @@ def clean_text(text):
 # đặt theo key trong dataset
 # train_df có key là text
 # IMDB_Dataset có key là review
-data["clean_text"] = data["review"].apply(clean_text)
+data["clean_text"] = data["text"].apply(clean_text)
 
 # Chuẩn hóa nhãn: negative=0, neutral=1, positive=2
 label_map = {"negative": 0, "neutral": 1, "positive": 2}
